@@ -28,4 +28,4 @@ All visual assets used in this game—including the card fronts, card backs, bac
 
 A video demonstrating the game's functionality, animations, and features can be found in the repository at the link below.
 
-[**View Gameplay Video**](./videos/game.mkv)
+[**View Gameplay Video**](./videos/game.mp4)
