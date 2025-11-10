@@ -16,7 +16,7 @@ public class AvatarListItem : MonoBehaviour
     }
     public void Initialize(int avatarIndex)
     {
-        img.sprite = GameData.instance.avatars[avatarIndex];
+        img.sprite = GameData.Instance.avatars[avatarIndex];
 
         this.avatarIndex = avatarIndex;
     }

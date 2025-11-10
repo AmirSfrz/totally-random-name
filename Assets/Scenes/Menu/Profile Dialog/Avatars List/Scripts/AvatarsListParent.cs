@@ -12,7 +12,7 @@ public class AvatarsListParent : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < GameData.instance.avatars.Length; i++)
+        for (int i = 0; i < GameData.Instance.avatars.Length; i++)
         {
             AvatarListItem newItem = Instantiate(AvatarListItemPrefab, avatarsListRectTransform);
             newItem.Initialize(i);

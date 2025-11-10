@@ -26,7 +26,7 @@ public class PlayerProfileImage : MonoBehaviour
 
     private void SetProfileImg(int avatarIndex)
     {
-        Sprite profileImage= GameData.instance.avatars[avatarIndex];
+        Sprite profileImage= GameData.Instance.avatars[avatarIndex];
 
         playerImage.sprite = profileImage;
     }
