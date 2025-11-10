@@ -22,6 +22,9 @@ public class GameCard : MonoBehaviour
 
     private bool cardMatched = false;
 
+    [SerializeField]
+    private AudioClip flipSoundClip;
+
     private void Start()
     {
         GameBoardManager.OnGameStateChanged.AddListener(HandleGameStateChanged);
@@ -38,6 +41,8 @@ public class GameCard : MonoBehaviour
         Animator.SetTrigger("FlipToFront");
         isFlipped = true;
 
+        SFXManager.instance.PlaySFX(flipSoundClip);
+
         if (callEvent)
             CardFlipped.Invoke(this);
     }
@@ -46,6 +51,7 @@ public class GameCard : MonoBehaviour
     {
         Animator.SetTrigger("FlipToBack");
         isFlipped = false;
+        SFXManager.instance.PlaySFX(flipSoundClip);
     }
 
     public void Clicked()

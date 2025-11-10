@@ -247,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardFrontImage: {fileID: 1606400925}
   Animator: {fileID: 1826537437}
+  flipSoundClip: {fileID: 8300000, guid: ceacd3cfc117fbc46b1bb892f7efcd1a, type: 3}
 --- !u!114 &1826537436
 MonoBehaviour:
   m_ObjectHideFlags: 0

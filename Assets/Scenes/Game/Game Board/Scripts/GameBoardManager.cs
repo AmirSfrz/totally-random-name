@@ -22,6 +22,13 @@ public class GameBoardManager : MonoBehaviour
     [SerializeField]
     private GameObject boardRowPrefab;
 
+    [Header("Audio")]
+    [SerializeField]
+    private AudioClip gameEndClip;
+
+    [SerializeField]
+    private AudioClip cardsMatchClip;
+
     [Header("times")]
     [SerializeField]
     private float timeBeforeGameStarts = 2f;
@@ -42,6 +49,26 @@ public class GameBoardManager : MonoBehaviour
             currentGameState = value;
 
             OnGameStateChanged.Invoke(currentGameState);
+
+            switch (currentGameState)
+            {
+                case GameState.Idle:
+                    break;
+                case GameState.GameStart:
+                    break;
+                case GameState.GameInProgress:
+                    break;
+                case GameState.ShowingCards:
+                    break;
+                case GameState.CardsMatched:
+                    SFXManager.instance.PlaySFX(cardsMatchClip);
+                    break;
+                case GameState.GameOver:
+                    SFXManager.instance.PlaySFX(gameEndClip);
+                    break;
+                default:
+                    break;
+            }
         }
 
         get

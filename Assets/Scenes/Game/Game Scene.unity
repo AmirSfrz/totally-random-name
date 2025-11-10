@@ -1532,8 +1532,10 @@ MonoBehaviour:
   gameBoardParent: {fileID: 2012893819}
   gameCardsPrefab: {fileID: 2256342752863033910, guid: 975c6e906a7611442a4542a0cdf37b49, type: 3}
   boardRowPrefab: {fileID: 2512264381552798792, guid: 62cdcd773cee58148a817f3daade07e3, type: 3}
+  gameEndClip: {fileID: 8300000, guid: b2a3430d7ebdfeb45a859e51ac3b377c, type: 3}
+  cardsMatchClip: {fileID: 8300000, guid: 9d8da2a221266cd4aa55d5c82a44c16a, type: 3}
   timeBeforeGameStarts: 2
-  timeForShowCards: 1
+  timeForShowCards: 0.4
 --- !u!4 &1878561345
 Transform:
   m_ObjectHideFlags: 0
