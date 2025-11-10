@@ -6,6 +6,20 @@ public class SaveOrLoadManager : MonoBehaviour
 {
     public static SaveOrLoadManager instance;
 
+    private void Awake()
+    {
+        // handlingsingleton
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Tags for PlayerPrefs
     private const string PLAYER_TOTAL_SCORE_TAG = "PlayerTotalScore";
 
