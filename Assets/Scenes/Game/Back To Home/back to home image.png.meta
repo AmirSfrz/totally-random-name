@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5802687b49681d440a37f183121e1faa
+guid: 0137a7ee3e8e8bb46a5062dde17063a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,22 +117,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cards-back_0
+      name: back to home image_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 1024
-        height: 960
+        x: 223
+        y: 211
+        width: 582
+        height: 576
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7174dda804af12c4bbc9d3e757dad4a3
-      internalID: -1297106511
+      spriteID: 58772cc5fb17d9f45be18965bdbdae0f
+      internalID: 973969516
       vertices: []
       indices: 
       edges: []
@@ -140,7 +140,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 039a6ae03b1c49445a4bfe3da9bc995f
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cards-back_0: -1297106511
+      back to home image_0: 973969516
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
